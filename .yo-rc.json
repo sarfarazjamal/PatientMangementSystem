@@ -1,0 +1,41 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.jamal.patient.management",
+      "nativeLanguage": "en"
+    },
+    "jhipsterVersion": "6.10.5",
+    "applicationType": "monolith",
+    "baseName": "PatientManagement",
+    "packageName": "com.jamal.patient.management",
+    "packageFolder": "com/jamal/patient/management",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": false,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "mysql",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "NjQzYzE3NzM5NTZlMjViZWM0ZTE4Y2IzOGY5ZDFkODYwN2M2NTc2OTJkZDk0ZWNhMjliZTkwMGUxYmIyNWUyNDcwZTczNDc0YjE0MzQ3NjlkODViM2FhZTkyZTQ1MTk0ZjY5YThlYzY0MDNhMjYxYzExNTkzOTYyYTE3OWFjN2Y=",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "skipClient": true,
+    "creationTimestamp": 1652902240659,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": true,
+    "nativeLanguage": "en",
+    "languages": ["en"],
+    "blueprints": []
+  }
+}
