@@ -1,6 +1,7 @@
 # PatientManagement
 
-
+Swagger URL:
+http://localhost:8088/swagger-ui.htm
 
 ## Development
 
