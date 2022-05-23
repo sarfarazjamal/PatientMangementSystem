@@ -3,6 +3,31 @@
 Swagger URL:
 http://localhost:8088/swagger-ui.htm
 
+Generate JWT Token:
+1)curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{ \ 
+   "password": "admin", \ 
+   "rememberMe": true, \ 
+   "username": "admin" \ 
+ }' 'http://localhost:8088/api/authenticate'
+ 
+ 2) Create Appoinntment.
+ curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImV4cCI6MTY1NTkwMzkyMH0.IMhrtet4dlNuhCNAvfUva4EGN6xDur7PW4LQuq0lhWp_Y1kRxJcfFC3UhKNKFdoErXrq2euZFqQKOUll7gxBCw' -d '{ \ 
+   "doctorId": 8, \ 
+   "endTime": "2022-05-23T13:20:00.730Z", \ 
+   "patientId": 9, \ 
+   "startTime": "2022-05-23T13:20:00.730Z", \ 
+   "status": "ACTIVE", \ 
+   "type": "CONSULTATION" \ 
+ }' 'http://localhost:8088/api/appointments'
+ 3) Find appointment with doctor ID
+ http://localhost:8088/api/appointments?doctorId.equals=10
+ 4) find appointment with multiple doctor with in clause doctor id in (10,9,8)
+ http://localhost:8088/api/appointments?doctorId.in=10%2C9%2C8
+ 5) Find docctor with patient id and with multiple patient id, 
+ http://localhost:8088/api/appointments?patientId.equals=10
+ 6) Find appoinment with doctor and patient
+ http://localhost:8088/api/appointments?doctorId.in=10&patientId.equals=10
+
 ## Development
 
 To start your application in the dev profile, run:
